@@ -1,20 +1,103 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #c3e2fd;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
     color: #333333;
+    margin: 0;
+    padding: 0;
 }
-h1 {
+
+/* --- ESTILOS DEL ENCABEZADO Y BOTONES --- */
+header {
+    background-color: #ff66b2;
+    color: white;
     text-align: center;
-    font-size: 36px;
-    color: #ff66b2;
+    padding: 30px 20px;
 }
-section{
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+}
+
+.menu-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: white;
+    color: #ff66b2;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    background-color: #ffe6f2; /* Cambio de color al pasar el mouse */
+}
+
+/* --- LA MAGIA DE OCULTAR Y MOSTRAR (INTERACTIVIDAD) --- */
+.tarjeta {
+    display: none; /* OCULTA TODAS LAS SECCIONES POR DEFECTO */
     background-color: white;
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 30px;
+    border: 3px solid #ff66b2;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Cuando se le da clic a un botón, la URL cambia a #id y esto lo muestra */
+.tarjeta:target {
+    display: block; 
+}
+
+/* Estilos de imágenes y textos internos */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: #db2777;
+}
+
+footer {
+    text-align: center;
     padding: 20px;
-    border: 2px solid #ff66b2;
+    margin-top: 40px;
+}
+
+/* --- EJEMPLO DE HERENCIA PARA TU TAREA --- */
+.caja-herencia {
+    color: #0c4a6e; 
+    font-family: 'Georgia', serif; 
+    border-color: #0c4a6e;
+}
+
+.caja-herencia h2 {
+    color: #0c4a6e;
+}
+
+.btn-heredado {
+    font-family: inherit; /* HERENCIA FORZADA */
+    color: inherit;       /* HERENCIA FORZADA */
+    background-color: transparent;
+    border: 2px solid currentColor;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
 }

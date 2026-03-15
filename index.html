@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
     <title>Axolotilandia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>"Axolotolandia"</h1> 
-        <nav>
-            <ul>
-                <li><a href="#mitologia">Mitología</a></li>
-                <li><a href="#anatomia">Anatomía</a></li>
-                <li><a href="#conservacion">Conservación</a></li>
-            </ul>
+        <p>Selecciona un tema en los botones para explorar:</p>
+        
+        <nav class="menu-botones">
+            <a href="#introduccion" class="btn">Características</a>
+            <a href="#mitologia" class="btn">Mitología</a>
+            <a href="#anatomia" class="btn">Anatomía</a>
+            <a href="#conservacion" class="btn">Conservación</a>
         </nav>
     </header>
 
     <main>
-        <section id="introduccion">
+        <section id="introduccion" class="tarjeta">
             <img src="https://cdn.shopify.com/s/files/1/0255/5137/2351/products/AJAJ-0010sticker.png?v=1661475205&width=600" alt="Dibujo de ajolote rosa" width="200">
             <h2>Características de los ajolotes</h2> 
             <p><em>Lista hecha por Roshely Molina</em></p>
-            
             <h3>Alimentos que <strong>comen</strong> los ajolotes</h3>
             <ul>
                 <li>Microalgas</li>
                 <li>Alga espirulina</li>
                 <li>Lombriz de tierra</li>
             </ul>
-
             <h3>Enfermedades de los ajolotes</h3>
             <ol> 
                 <li>Origen de parásitos</li>
@@ -40,26 +39,24 @@
             </ol>
         </section>  
 
-        <hr>
-
-        <section id="mitologia">
+        <section id="mitologia" class="tarjeta">
             <h2>Mitología</h2>
             <p>El axolote aparece ligado a los más antiguos mitos mexicas. Su nombre en náhuatl (axólotl) quiere decir “xólotl de agua” y se ha traducido como “juguete de agua”, “monstruo acuático”, “gemelo de agua” o “perro de agua”. Es evidente que hace referencia al dios Xólotl, una especie de Caín heroico de los nahuas que es el hermano gemelo de Quetzalcóatl o, para ser preciso, su doble. Mientras Quetzalcóatl es el “gemelo precioso”, Xólotl es monstruoso y deforme.</p>
             <p>En la leyenda del quinto sol se indica que en la ciudad sagrada de Teotihuacán los aztecas creían que cuando Nanahuatzin y Tecuciztécatl se tiraron a la hoguera se convirtieron en el sol y la luna respectivamente; los dioses, al darse cuenta de que el sol y los astros seguían sin moverse, decidieron morir también, pero hubo uno, Xólotl, que se negó al sacrificio. Xólotl es un dios que le tiene miedo a la muerte y no la acepta. Por ello escapa del sacrificio mediante sus poderes de transformación.</p>
-            <p>Primero se convirtió en maíz, pero el verdugo lo encontró; se escapó nuevamente y se transformó en maguey, pero fue encontrado una vez más. Finalmente se transformó en axolote, forma en la que encontró la muerte.</p>
         </section>
 
-        <section id="anatomia">
+        <section id="anatomia" class="tarjeta">
             <h2>Anatomía</h2>
             <p>Los axolotes presentan esqueleto que al no estar completamente osificado difiere de la mayoría de los vertebrados. Este proceso es evidente en la zona de las branquias que están compuestas en su totalidad por cartílago.</p>
             <p>El cráneo de los anfibios en general, presenta mayor número de estructuras cartilaginosas que óseas, y presenta conductos que comunican la cavidad nasal con la bucal, llamados coanas u orificio nasal interno.</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4G5X_-AUbh1h2bl-DWFF1OTwnBu9VWKaFAp8t20AE9g&s" alt="Esqueleto de ajolote" width="300">
         </section>
 
-        <section id="conservacion">
+        <section id="conservacion" class="tarjeta caja-herencia">
             <h2>Conservación</h2>
-            <p>Actualmente las acciones para la conservación de esta especie se están centrando en mejorar las condiciones del Lago de Xochimilco a través de la educación para la conservación, ecoturismo, restauración del hábitat, control de especies introducidas de peces (como carpas y tilapias) y estrategias alternas para la conservación de axolotes in situ como la generación de refugios. Los proyectos que actualmente se desarrollan integran los cuatro grandes sectores para la conservación: político, social, económico y científico.</p>
-            <p>La reintroducción de axolotes que han sido criados en cautiverio no se recomienda hasta que las amenazas (como crecimiento urbano, ganadería, uso de agroquímicos, fragmentación del hábitat, control de especies introducidas, posibles enfermedades, riesgos genéticos, entre otras) puedan ser mitigadas o evaluadas dependiendo del caso.</p>
+            <p>Actualmente las acciones para la conservación de esta especie se están centrando en mejorar las condiciones del Lago de Xochimilco a través de la educación para la conservación, ecoturismo, restauración del hábitat y generación de refugios.</p>
+            
+            <button class="btn-heredado">Apoyar a los refugios</button>
         </section>
     </main>
 
