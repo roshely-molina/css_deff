@@ -10,7 +10,6 @@ body {
     padding: 0;
 }
 
-/* --- ESTILOS DEL ENCABEZADO Y BOTONES --- */
 header {
     background-color: #ff66b2;
     color: white;
@@ -26,7 +25,7 @@ header h1 {
 .menu-botones {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espacio entre botones */
+    gap: 15px; 
     margin-top: 20px;
     flex-wrap: wrap;
 }
@@ -42,12 +41,12 @@ header h1 {
 }
 
 .btn:hover {
-    background-color: #ffe6f2; /* Cambio de color al pasar el mouse */
+    background-color: #ffe6f2; 
 }
 
-/* --- LA MAGIA DE OCULTAR Y MOSTRAR (INTERACTIVIDAD) --- */
+
 .tarjeta {
-    display: none; /* OCULTA TODAS LAS SECCIONES POR DEFECTO */
+    display: none; 
     background-color: white;
     width: 80%;
     margin: 30px auto;
@@ -57,12 +56,11 @@ header h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* Cuando se le da clic a un botón, la URL cambia a #id y esto lo muestra */
 .tarjeta:target {
     display: block; 
 }
 
-/* Estilos de imágenes y textos internos */
+
 img {
     max-width: 100%;
     border-radius: 8px;
@@ -78,7 +76,7 @@ footer {
     margin-top: 40px;
 }
 
-/* --- EJEMPLO DE HERENCIA PARA TU TAREA --- */
+
 .caja-herencia {
     color: #0c4a6e; 
     font-family: 'Georgia', serif; 
@@ -90,8 +88,8 @@ footer {
 }
 
 .btn-heredado {
-    font-family: inherit; /* HERENCIA FORZADA */
-    color: inherit;       /* HERENCIA FORZADA */
+    font-family: inherit; 
+    color: inherit;      
     background-color: transparent;
     border: 2px solid currentColor;
     padding: 12px 20px;
@@ -100,4 +98,26 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
+}
+/*-- alineacion con flexbox --*/
+.contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fce7f3;
+    border: 2px  dashed #ff66b2;
+    border-radius: 10px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.caja-flex {
+    background-color: #e072a4;
+    color: white;
+    padding: 15 px 20 px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: o 4px 6px rgba(0,0,0,0.1);
 }
