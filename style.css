@@ -121,3 +121,21 @@ footer {
     text-align: center;
     box-shadow: o 4px 6px rgba(0,0,0,0.1);
 }
+.cotenedor-intro-flex{
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+
+margin-top: 20px;
+}
+
+.tarjeta-tipo {
+    background-color: #fbcfe8;
+    color: #831843;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f472b6;
+    text-align: center;
+    flex: 1 1 200px;
+
+}
